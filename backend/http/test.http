@@ -1,0 +1,44 @@
+### Register user
+POST http://localhost:3000/accounts/register
+Content-Type: application/json
+
+{
+    "username": "jacques",
+    "password": "hoihoi"
+}
+
+### login
+# @name login
+POST http://localhost:3000/accounts/login
+Content-Type: application/json
+
+{
+    "username": "jacques",
+    "password": "hoihoi"
+}
+
+### profile
+@authToken = {{login.response.body.token}}
+GET http://localhost:3000/accounts/profile
+Accept: application/json
+authorization: {{authToken}}
+
+### logout
+POST http://localhost:3000/accounts/logout
+
+### create game
+POST http://localhost:3000/games/create
+Content-Type: application/json
+
+{
+    "game": "Monopoly"
+}
+
+
+### list current games
+GET http://localhost:3000/games
+Content-Type: application/json
+
+{
+    "game": "Monopoly"
+}
