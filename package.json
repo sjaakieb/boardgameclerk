@@ -3,7 +3,7 @@
     "biome-check": "biome check --apply .",
     "biome-format": "biome format --help"
   },
-  "workspaces": ["app", "backend"],
+  "workspaces": ["apps/*"],
   "devDependencies": {
     "@biomejs/biome": "^1.6.4"
   }

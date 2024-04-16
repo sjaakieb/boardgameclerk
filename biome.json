@@ -13,7 +13,7 @@
 		}
 	},
 	"files": {
-		"include": ["app/**", "backend/**"],
-		"ignore": ["app/.expo"]
+		"include": ["apps/**"],
+		"ignore": ["apps/app/.expo"]
 	}
 }
